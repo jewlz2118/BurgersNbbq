@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+}
+
+.header {
+  height: 95vh;
+  background-image: url(../img/nick-hillier-254650-unsplash.jpg);
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 800px;
+}
+
+.header-box {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  background-color: rgba(180, 55, 92, 0.89);
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 11px;
+}
+
+/*# sourceMappingURL=main.css.map */
