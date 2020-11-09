@@ -1,3 +1,8 @@
+
+@import 'variables/colours.scss';
+
+@import 'layout/navigation.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +16,9 @@ body {
   // line-height: ;
   color: #fff;
 }
+
+
+//hero section
 
 .header {
   height: 95vh;
@@ -36,7 +44,7 @@ body {
   position: absolute;
   top: 70%;
   left: 50%;
-  background-color: rgba(180, 55, 92, 0.89);
+  background-color: $color-primary;
   transform: translate(-50%, -50%);
 }
 
@@ -49,8 +57,4 @@ body {
   display: block;
   font-size: 20px;
   letter-spacing: 11px;
-}
-
-li {
-  
 }
