@@ -1,3 +1,14 @@
+/*
+0-600px: phone
+600-900px: tablet portrait
+900-1200px: tablet landscape
+1200-1800px: NORMAL style are aplied
+1800px + : big desktop
+
+order: base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 .navigation__checkbox {
   display: none;
 }
@@ -110,16 +121,6 @@
   transform: rotate(-45deg);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  color: #fff;
-}
-
 .header {
   height: 95vh;
   background-image: url(../img/nick-hillier-254650-unsplash.jpg);
@@ -144,6 +145,7 @@ body {
   position: absolute;
   top: 70%;
   left: 50%;
+  padding: 5px 15px;
   background-color: #781313;
   transform: translate(-50%, -50%);
 }
@@ -157,6 +159,152 @@ body {
   display: block;
   font-size: 20px;
   letter-spacing: 11px;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 8rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
+}
+.row .col-1-of-2 {
+  width: calc((100% - 6rem) / 2);
+}
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+.row .col-2-of-3 {
+  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+}
+.row .col-1-of-4 {
+  width: calc((100% - 3 * 6rem) / 4);
+}
+.row .col-2-of-4 {
+  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+}
+.row .col-3-of-4 {
+  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+}
+
+.menu-gallery {
+  background-color: #343434;
+  padding: 10rem 4rem;
+}
+
+.gallery-btn {
+  position: relative;
+  bottom: 5rem;
+}
+
+.subheader {
+  padding: 2rem 0 4rem 0;
+  text-align: center;
+}
+
+.newsletter {
+  background-color: #781313;
+  padding-bottom: 2rem;
+}
+
+.info-text {
+  padding: 0rem 5rem;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  border-radius: 0.3rem;
+  transition: all 0.2s;
+  position: relative;
+}
+.btn:hover, .btn:active {
+  background-position: 100%;
+  color: white;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #0a0a0a 50%);
+  background-size: 230%;
+  transition: all 0.4s;
+  transform: translateX(0.2rem);
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(10, 10, 10, 0.2);
+}
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(10, 10, 10, 0.2);
+}
+.btn--red {
+  background-color: #781313;
+  color: white;
+  margin-right: 2rem;
+}
+.btn--black {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 6.5rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 4rem !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Special Elite", cursive;
+  font-weight: 400;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

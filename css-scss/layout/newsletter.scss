@@ -1,0 +1,81 @@
+//newsletter section
+.menu-gallery {
+  background-color: $color-primary-darkgrey;
+  padding: 10rem 4rem;
+}
+
+.gallery-btn {
+  position: relative;
+  bottom: 5rem;
+}
+
+.subheader {
+  padding: 2rem 0 4rem 0;
+  text-align: center;
+}
+
+
+.newsletter {
+  background-color: $color-primary;
+  padding-bottom: 2rem;
+
+
+}
+
+.info-text {
+  padding: 0rem 5rem;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: .3rem;
+    transition: all .2s;
+    position: relative;
+
+  }
+
+  &:hover,
+  &:active {
+    background-position: 100%;
+    color: white;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $button-black 50%);
+    background-size: 230%;
+    transition: all .4s;
+    transform: translateX(0.2rem);
+    transform: translateY(-.2rem);
+    box-shadow: 0 1rem 2rem rgba($button-black,.2);
+
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba($button-black,.2);
+  }
+
+  &--red {
+    background-color: $color-primary;
+    color: white;
+    margin-right: 2rem;
+
+
+  }
+
+  &--black {
+    background-color: $button-black;
+    color: white;
+
+  }
+}
