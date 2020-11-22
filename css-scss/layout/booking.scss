@@ -1,0 +1,28 @@
+.bookings {
+  background-color: white;
+  padding: 9rem 6rem;
+}
+
+.table-Booking {
+  background-color: $color-primary-darkgrey;
+  padding: 2rem 3rem;
+}
+
+input{
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  outline: none;
+  background-color: $color-primary-darkgrey;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 40%;
+  position: relative;
+  font-size: 18px;
+
+}
+
+label{
+  font-size: 18px;
+
+}

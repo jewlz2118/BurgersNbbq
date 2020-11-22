@@ -44,6 +44,7 @@ order: base + typography > general layout + grid > page layout > components
   z-index: 1500;
   opacity: 0;
   transition: all 0.6s;
+  overflow: hidden;
 }
 .navigation__list {
   position: absolute;
@@ -222,7 +223,7 @@ order: base + typography > general layout + grid > page layout > components
 
 .menu-gallery {
   background-color: #343434;
-  padding: 10rem 4rem;
+  padding: 6rem 4rem;
 }
 
 .gallery-btn {
@@ -231,7 +232,7 @@ order: base + typography > general layout + grid > page layout > components
 }
 
 .subheader {
-  padding: 2rem 0 4rem 0;
+  padding: 3rem 0 3rem 0;
   text-align: center;
 }
 
@@ -283,6 +284,27 @@ order: base + typography > general layout + grid > page layout > components
   color: white;
 }
 
+.location {
+  background-color: grey;
+}
+.location .store {
+  color: black;
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+.location .store-postcode {
+  color: black;
+  display: block;
+}
+
+.address-info {
+  display: block;
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 5rem;
+}
+
 .u-center-text {
   text-align: center !important;
 }
@@ -305,6 +327,33 @@ body {
   font-family: "Special Elite", cursive;
   font-weight: 400;
   color: #fff;
+}
+
+.bookings {
+  background-color: white;
+  padding: 9rem 6rem;
+}
+
+.table-Booking {
+  background-color: #343434;
+  padding: 2rem 3rem;
+}
+
+input {
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  outline: none;
+  background-color: #343434;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 40%;
+  position: relative;
+  font-size: 18px;
+}
+
+label {
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */

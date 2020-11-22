@@ -6,6 +6,7 @@
 @import 'layout/header.scss';
 @import 'layout/grid.scss';
 @import 'layout/newsletter.scss';
+@import 'layout/location.scss';
 
 .u-center-text { text-align: center !important; }
 .u-margin-bottom-small { margin-bottom: 6.5rem !important; }
@@ -23,4 +24,33 @@ body {
   // font-size: ;
   // line-height: ;
   color: #fff;
+}
+
+.bookings {
+  background-color: white;
+  padding: 9rem 6rem;
+}
+
+.table-Booking {
+  background-color: $color-primary-darkgrey;
+  padding: 2rem 3rem;
+}
+
+input{
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  outline: none;
+  background-color: $color-primary-darkgrey;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 40%;
+  position: relative;
+  font-size: 18px;
+
+}
+
+label{
+  font-size: 18px;
+  
 }
