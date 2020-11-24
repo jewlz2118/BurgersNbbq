@@ -42,6 +42,7 @@
 
     opacity: 0;
     transition: all .6s ;
+    overflow: hidden;
   }
 
   &__list {
@@ -54,11 +55,13 @@
     text-align: center;
 
 
+
   }
 
   &__item {
     text-decoration: none;
     margin: 1.5rem;
+    
 
   }
 

@@ -7,6 +7,7 @@
 @import 'layout/grid.scss';
 @import 'layout/newsletter.scss';
 @import 'layout/location.scss';
+@import 'layout/booking.scss';
 
 .u-center-text { text-align: center !important; }
 .u-margin-bottom-small { margin-bottom: 6.5rem !important; }
@@ -26,31 +27,58 @@ body {
   color: #fff;
 }
 
-.bookings {
-  background-color: white;
-  padding: 9rem 6rem;
-}
+.social {
+ background-image: url(../img/jez-timms-305915-unsplash.jpg);
+ height: 80vh;
+ background-size: cover;
+ background-position: left;
+ position: relative;
 
-.table-Booking {
-  background-color: $color-primary-darkgrey;
-  padding: 2rem 3rem;
-}
 
-input{
-  margin-top: 0.4rem;
-  margin-bottom: 1rem;
-  outline: none;
-  background-color: $color-primary-darkgrey;
-  color: white;
-  border: none;
-  border-bottom: 1px solid white;
-  width: 40%;
-  position: relative;
-  font-size: 18px;
 
 }
 
-label{
-  font-size: 18px;
-  
+.social-chat {
+  background-color: $color-primary;
+  padding-bottom: 2rem;
+  height: 300px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 400px;
+
+
+
+}
+
+.icon-container {
+
+  height: 100px;
+  position: absolute;
+  top: 62%;
+  right: 10%;
+  width: 400px;
+
+  .social-icon1 {
+    background-color: $color-primary;
+    width: 190px;
+    position: absolute;
+    height: 100px;
+    background-image: url(../img/008-twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+  }
+
+  .social-icon2 {
+    background-color: $color-primary;
+    width: 190px;
+    position: absolute;
+    height: 100px;
+    right: 0;
+    background-image: url(../img/029-instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+  }
 }
