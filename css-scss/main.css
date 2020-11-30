@@ -296,6 +296,7 @@ order: base + typography > general layout + grid > page layout > components
 .location .store-postcode {
   color: black;
   display: block;
+  padding-top: 1rem;
 }
 
 .address-info {
@@ -330,30 +331,6 @@ input {
 
 label {
   font-size: 18px;
-}
-
-.u-center-text {
-  text-align: center !important;
-}
-
-.u-margin-bottom-small {
-  margin-bottom: 6.5rem !important;
-}
-
-.u-margin-top-big {
-  margin-top: 4rem !important;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Special Elite", cursive;
-  font-weight: 400;
-  color: #fff;
 }
 
 .social {
@@ -401,6 +378,79 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 40%;
+}
+
+footer {
+  background-color: #0a0a0a;
+  height: 300px;
+}
+
+.footer_container {
+  width: 70%;
+  margin: auto;
+  height: 270px;
+}
+.footer_container .row:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.footer_copyright {
+  background-color: #781313;
+  height: 35px;
+  width: 100%;
+  position: relative;
+}
+.footer_copyright .copy {
+  position: absolute;
+  top: 0.7rem;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+
+.navigation__list2 {
+  list-style: none;
+  margin: 2rem 5rem;
+  display: block;
+}
+.navigation__link2:link, .navigation__link2:visited {
+  display: inline-block;
+  padding-top: 0.2rem;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #781313 50%);
+  background-size: 230%;
+  transition: all 0.4s;
+}
+.navigation__link2:hover, .navigation__link2:active {
+  background-position: 100%;
+  color: white;
+  transform: translateX(0.2rem);
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 6.5rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 4rem !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Special Elite", cursive;
+  font-weight: 400;
+  line-height: 1.2rem;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
