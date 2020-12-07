@@ -20,11 +20,11 @@
 
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Menu</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Find Us</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Menu</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Find Us</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Contact Us</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Book Now</a></li>
         </ul>
       </nav>
     </div>
@@ -42,13 +42,13 @@
     </header>
 
     <main>
-      <section class="menu-gallery">
+      <section class="menu-gallery" id="menu-gallery">
         <div class="row">
           <div class="col-1-of-3">
             <div class="newsletter">
               <h2 class="subheader">Newsletter</h2>
               <p class="info-text">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ligula nibh. Pellentesque dui elit, vehicula ac justo sed, ultrices semper odio. Morbi fringilla nisi posuere pulvinar commodo. Integer vulputate cursus faucibus. Vivamus arcu elit, egestas sit amet enim vitae, mattis maximus justo. Nam scelerisque bibendum odio ullamcorper auctor. Morbi cursus justo a velit tincidunt, vitae suscipit ex viverra.</p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ligula nibh. Pellentesque dui elit, vehicula ac justo sed, ultrices semper odio. Morbi fringilla nisi posuere pulvinar commodo. Integer vulputate cursus faucibus. Vivamus arcu elit, egestas sit amet enim vitae, mattis maximus justo.</p>
               <div class="u-center-text u-margin-top-big">
                 <a href="#" class="btn btn--black">Join Today</a>
               </div>
@@ -59,7 +59,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ligula nibh. P
             <div class="gallery">
               <img src="img/burgers-classicibiza.jpg" alt="burgers" class="img-responsive">
               <div class="u-center-text gallery-btn">
-                <a href="" class="btn btn--red">Menu</a>
+                <a href="#popup" class="btn btn--red">Menu</a>
                 <a href="#table-booking" class="btn btn--red">Make a Booking</a>
             </div>
           </div>
@@ -176,7 +176,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ligula nibh. P
               <nav>
                 <ul class="navigation__list2">
                   <li class="navigation__item"><a href="#" class="navigation__link2">About</a></li>
-                  <li class="navigation__item"><a href="#" class="navigation__link2">Menu</a></li>
+                  <li class="navigation__item"><a href="#popup" class="navigation__link2">Menu</a></li>
                   <li class="navigation__item"><a href="#" class="navigation__link2">Find Us</a></li>
                   <li class="navigation__item"><a href="#" class="navigation__link2">Contact Us</a></li>
                   <li class="navigation__item"><a href="#" class="navigation__link2">Book Now</a></li>
@@ -209,16 +209,82 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ligula nibh. P
       <div class="footer_copyright">
         <p class="copy"> Copyright&copy; Burgers N BBq | Real Smokehouse Joy</p>
       </div>
-
-
-
-
     </footer>
 
+<!-- pop up menu -->
+    <div class="popup" id="popup">
 
+      <div class="popup__menu">
+        <a href="#menu-gallery" class="popup__close">&times;</a>
+        <!-- <img src="./img/burgers-classicibiza.jpg" alt="" class="img-responsive"> -->
+        <div class="popup__left">
+          <h1 class="food">Burgers</h1>
+          <ul>
+            <li>cheeseburger<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>house stack burger<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>bacon<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>chicken burger<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </ul>
+          <!-- <img src="./img/ribs-goodfoodchannel.jpg" alt="" class="img-responsive"> -->
+          <h1 class="food">Smoked Meats</h1>
+          <ul>
+            <li>Whole Brisket/ Brisket Flat<span>£60 / £25<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>Baby Back Ribs Whole / Half Rack<span>£9.5 / 6.5 <span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>Beef Ribs<span>£7.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>chicken Whole / Half<span>£8 / £4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>chicken Wings<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </ul>
+          <h1 class="food">BBQ Platters</h1>
+          <ul>
+            <li>Combo platter<span>£45.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>chicken and ribs platter<span>£27<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </ul>
+          <h1 class="food">Sandwhiches</h1>
+          <ul>
+            <li>chicken<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>Brisket<span>£6.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>pulled pork<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </ul>
+        </div>
 
+        <div class="popup__right">
+          <h1 class="food">Sides</h1>
+          <ul>
+            <li>chips<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>Sweet potatoes fries<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>onion rings<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>Mozzarella Sticks<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>corn on the cob<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <li>garlic Bread<span>£4.5<span></li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </ul>
+          <h1 class="food">Drinks</h1>
+          <ul>
+            <li>coke<span>£1.75<span></li>
+            <li>7up<span>£1.75<span></li>
+            <li>ginger ale<span>£1.5<span></li>
+            <li>homemade lemonade<span>£2<span></li>
+          </ul>
 
+        </div>
 
-
-  </body>
 </html>
