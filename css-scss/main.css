@@ -333,6 +333,14 @@ label {
   font-size: 18px;
 }
 
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
 .social {
   background-image: url(../img/jez-timms-305915-unsplash.jpg);
   height: 80vh;

@@ -109,20 +109,40 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ligula nibh. P
       <section class="bookings" id="table-booking">
         <div class="row">
           <div class="col-2-of-3">
-            <form autocomplete="off" class="table-Booking">
+            <form action="" method="get" autocomplete="off" class="table-Booking" id="form">
               <h2 class="subheader">Make a Booking</h2>
-              <label for="fname">First name :</label><br>
-              <input type="text" id="fname" name="fname"><br>
-              <label for="lname">Last name :</label><br>
-              <input type="text" id="lname" name="lname"><br>
-              <label for="email">Email :</label><br>
-              <input type="text" id="email" name="email"><br>
-              <label for="date">Date of booking :</label><br>
-              <input type="date" id="date" name="date"><br>
-              <label for="Time">Time of booking :</label><br>
-              <input type="time" id="time" name="time"><br>
-              <label for="number">guest numbers : (for bookings of more then 8 give us a call)</label><br>
-              <input type="number" id="quantity" name="quantity" min="1" max="8"><br>
+
+              <div class="form-control">
+                <label for="fname">First name :</label><br>
+                <input type="text" id="fname" name="fname"><br>
+              </div>
+
+              <div class="form-control ">
+                <label for="lname">Last name :</label><br>
+                <input type="text" id="lname" name="lname"><br>
+              </div>
+
+              <div class="form-control">
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email"><br>
+              </div>
+
+              <div class="form-Control">
+                <label for="date">Date of booking :</label><br>
+                <input type="date" id="date" name="date"><br>
+
+              </div>
+
+              <div class="form-Control">
+                <label for="Time">Time of booking :</label><br>
+                <input type="time" id="time" name="time"><br>
+              </div>
+
+              <div class="form-Control">
+                <label for="number">guest numbers : (for bookings of more then 8 give us a call)</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" max="8"><br>
+              </div>
+
               <label for="occasion">Occasion :</label><br>
               <select id="occasion" name="occasion"><br>
                 <option value="birthday">Birthday</option>
@@ -130,8 +150,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ligula nibh. P
                 <option value="dining">Dine out</option>
                 <option value="corporate">corporate dining</option>
               </select><br><br>
+
               <label for="request"> Special Request :</label><br><br>
               <textarea name="message" rows="8" cols="40"></textarea>
+
+              <input type="submit" value="Submit" class="btn btn--black">
             </form>
           </div>
 
@@ -286,5 +309,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ligula nibh. P
           </ul>
 
         </div>
+          <script type="text/javascript" src="javascript/form.js"></script>
+      </body>
 
 </html>
