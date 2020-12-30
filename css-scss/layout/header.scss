@@ -6,6 +6,12 @@
   background-size: cover;
   background-position: right;
   position: relative;
+
+  @include respond(tab-port) {
+    width: auto;
+  }
+
+
 }
 
 .logo-box {
@@ -18,6 +24,15 @@
 
 .logo {
   height: 800px;
+
+  @include respond(tab-port) {
+    height: 34.37rem;
+  }
+
+  @include respond(phone) {
+    height: 30rem;
+
+  }
 }
 
 .header-box {
@@ -27,15 +42,40 @@
   padding: 5px 15px;
   background-color: $color-primary;
   transform: translate(-50%, -50%);
+
+  @include respond(tab-port) {
+    width: auto;
+
+  }
+
+
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
 }
 
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   letter-spacing: 11px;
+
+  @include respond(tab-port) {
+    display: inline-block;
+    width: 28.12rem;
+
+  }
+
+  @include respond(phone) {
+    display: inline-block;
+    width: 25rem;
+    font-size: 17px;
+
+  }
+
 }

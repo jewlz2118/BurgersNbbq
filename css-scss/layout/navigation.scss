@@ -5,6 +5,17 @@
     display: none;
   }
 
+  @include respond(tab-port){
+    &__button:hover &__icon::before {
+      top: -.3rem;
+    }
+
+    &__button:hover &__icon::after {
+      top: .3rem;
+    }
+  }
+
+
   &__button {
     background-color: white;
     height: 5rem;
@@ -16,6 +27,13 @@
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgb($button-black, .1);
     text-align: center;
+
+    @include respond(tab-port) {
+      height: 3.5rem;
+      width: 3.5rem;
+      right: 2rem;
+      top: 2rem;
+    }
   }
 
   &__background {
@@ -29,7 +47,12 @@
     z-index: 1000;
     transition: transform .5s cubic-bezier(.62,.28,.77,.51);
 
-
+    @include respond(tab-port) {
+      height: 3.5rem;
+      width: 3.5rem;
+      right: 2rem;
+      top: 2rem;
+    }
   }
 
   &__nav {
@@ -108,6 +131,8 @@
     position: relative;
     margin-top: 2.5rem;
 
+
+
     &,
     &::before,
     &::after {
@@ -115,6 +140,11 @@
       height: 2px;
       background-color: black;
       display: inline-block;
+
+      @include respond(tab-port) {
+        width: 2rem;
+      }
+
     }
 
     &::before,
@@ -127,6 +157,12 @@
 
     &::before {top: -.6rem;}
     &::after {top: .6rem;}
+
+    @include respond(tab-port) {
+      margin-top: 1.8rem;
+      &::before {top: -.5rem;}
+      &::after {top: .5rem;}
+    }
 
 
   }

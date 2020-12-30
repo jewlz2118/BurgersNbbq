@@ -12,6 +12,14 @@ order: base + typography > general layout + grid > page layout > components
 .navigation__checkbox {
   display: none;
 }
+@media only screen and (max-width: 56.25em) {
+  .navigation__button:hover .navigation__icon::before {
+    top: -0.3rem;
+  }
+  .navigation__button:hover .navigation__icon::after {
+    top: 0.3rem;
+  }
+}
 .navigation__button {
   background-color: white;
   height: 5rem;
@@ -24,6 +32,14 @@ order: base + typography > general layout + grid > page layout > components
   box-shadow: 0 1rem 3rem rgba(10, 10, 10, 0.1);
   text-align: center;
 }
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    height: 3.5rem;
+    width: 3.5rem;
+    right: 2rem;
+    top: 2rem;
+  }
+}
 .navigation__background {
   height: 3rem;
   width: 4rem;
@@ -34,6 +50,14 @@ order: base + typography > general layout + grid > page layout > components
   background-color: rgba(120, 19, 19, 0.95);
   z-index: 1000;
   transition: transform 0.5s cubic-bezier(0.62, 0.28, 0.77, 0.51);
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__background {
+    height: 3.5rem;
+    width: 3.5rem;
+    right: 2rem;
+    top: 2rem;
+  }
 }
 .navigation__nav {
   height: 100vh;
@@ -92,6 +116,11 @@ order: base + typography > general layout + grid > page layout > components
   background-color: black;
   display: inline-block;
 }
+@media only screen and (max-width: 56.25em) {
+  .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 2rem;
+  }
+}
 .navigation__icon::before, .navigation__icon::after {
   content: "";
   position: absolute;
@@ -103,6 +132,17 @@ order: base + typography > general layout + grid > page layout > components
 }
 .navigation__icon::after {
   top: 0.6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__icon {
+    margin-top: 1.8rem;
+  }
+  .navigation__icon::before {
+    top: -0.5rem;
+  }
+  .navigation__icon::after {
+    top: 0.5rem;
+  }
 }
 .navigation__button:hover .navigation__icon::before {
   top: -0.8rem;
@@ -129,6 +169,11 @@ order: base + typography > general layout + grid > page layout > components
   background-position: right;
   position: relative;
 }
+@media only screen and (max-width: 56.25em) {
+  .header {
+    width: auto;
+  }
+}
 
 .logo-box {
   position: absolute;
@@ -141,6 +186,16 @@ order: base + typography > general layout + grid > page layout > components
 .logo {
   height: 800px;
 }
+@media only screen and (max-width: 56.25em) {
+  .logo {
+    height: 34.37rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .logo {
+    height: 30rem;
+  }
+}
 
 .header-box {
   position: absolute;
@@ -150,16 +205,39 @@ order: base + typography > general layout + grid > page layout > components
   background-color: #781313;
   transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 56.25em) {
+  .header-box {
+    width: auto;
+  }
+}
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-primary {
+    text-align: center;
+  }
 }
 
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   letter-spacing: 11px;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading-primary-sub {
+    display: inline-block;
+    width: 28.12rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .heading-primary-sub {
+    display: inline-block;
+    width: 25rem;
+    font-size: 17px;
+  }
 }
 
 .row {
@@ -171,7 +249,7 @@ order: base + typography > general layout + grid > page layout > components
 }
 @media only screen and (max-width: 56.25em) {
   .row:not(:last-child) {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -194,7 +272,7 @@ order: base + typography > general layout + grid > page layout > components
 @media only screen and (max-width: 56.25em) {
   .row [class^=col-]:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
@@ -240,9 +318,20 @@ order: base + typography > general layout + grid > page layout > components
   background-color: #781313;
   padding-bottom: 2rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .newsletter #logo {
+    display: none;
+  }
+}
 
 .info-text {
   padding: 0rem 5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .disclaimer {
+    padding: 2rem 5rem;
+  }
 }
 
 .img-responsive {
@@ -305,10 +394,23 @@ order: base + typography > general layout + grid > page layout > components
   padding: 2rem;
   margin: 5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .address-info {
+    margin: 0;
+    line-height: 2rem;
+  }
+}
 
 .bookings {
   background-color: white;
   padding: 9rem 6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .bookings .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    padding: 0 auto;
+  }
 }
 
 .table-Booking {
@@ -328,9 +430,20 @@ input {
   position: relative;
   font-size: 18px;
 }
+@media only screen and (max-width: 56.25em) {
+  input {
+    width: 80%;
+  }
+}
 
 label {
   font-size: 18px;
+}
+
+@media only screen and (max-width: 37.5em) {
+  textarea {
+    width: 100%;
+  }
 }
 
 .form-control.success input {
@@ -339,6 +452,10 @@ label {
 
 .form-control.error input {
   border-color: red;
+}
+
+.btn--black {
+  border: 0;
 }
 
 .social {
@@ -398,8 +515,29 @@ footer {
   margin: auto;
   height: 270px;
 }
+@media only screen and (max-width: 56.25em) {
+  .footer_container {
+    position: relative;
+    width: 100%;
+  }
+}
 .footer_container .row:not(:last-child) {
   margin-bottom: 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer_container .small-logo {
+    position: absolute;
+    right: 10%;
+    top: 0;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer_container .small-logo {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 220px;
+  }
 }
 
 .footer_copyright {
@@ -414,11 +552,52 @@ footer {
   right: 50%;
   transform: translate(50%, 0);
 }
+@media only screen and (max-width: 37.5em) {
+  .footer_copyright .copy {
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: center;
+  }
+}
 
+@media only screen and (max-width: 56.25em) {
+  .navigation {
+    position: relative;
+  }
+}
 .navigation__list2 {
   list-style: none;
   margin: 2rem 5rem;
   display: block;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__list2 {
+    margin: 0;
+    position: absolute;
+    width: 50%;
+  }
+}
+.navigation__list2__right {
+  list-style: none;
+  margin: 2rem 5rem;
+  display: block;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__list2__right {
+    margin: 0;
+    position: absolute;
+    width: 50;
+    top: 0;
+    left: 15rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__list2__right {
+    width: 50;
+    top: 0;
+    left: 10rem;
+  }
 }
 .navigation__link2:link, .navigation__link2:visited {
   display: inline-block;
@@ -463,6 +642,12 @@ footer {
   font-size: 4rem;
   transition: all 0.4s;
 }
+@media only screen and (max-width: 56.25em) {
+  .popup__close:link, .popup__close:visited {
+    top: 2.5rem;
+    right: 2rem;
+  }
+}
 .popup__close:hover {
   color: #781313;
 }
@@ -477,25 +662,72 @@ footer {
   transform: translate(-50%, -50%);
   overflow: scroll;
 }
+@media only screen and (max-width: 56.25em) {
+  .popup__menu {
+    height: 35rem;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .popup__menu {
+    height: 35rem;
+    padding-top: 20px;
+  }
+}
 .popup__left {
   width: 50%;
   float: left;
   text-align: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .popup__left {
+    font-size: 12px;
+    padding: 0 40px 0 10px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .popup__left {
+    width: 100%;
+    font-size: 12px;
+    padding: 20px 40px 0 40px;
+  }
 }
 .popup__right {
   width: 50%;
   float: right;
   text-align: center;
 }
+@media only screen and (max-width: 56.25em) {
+  .popup__right {
+    font-size: 12px;
+    padding: 0 40px 0 10px;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .popup__right {
+    width: 100%;
+    font-size: 12px;
+  }
+}
 .popup span {
   color: #781313;
   padding-left: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .popup span {
+    padding-left: 2rem;
+  }
 }
 .popup li {
   padding-top: 2rem;
   font-size: 24px;
   text-transform: uppercase;
   list-style: none;
+}
+@media only screen and (max-width: 56.25em) {
+  .popup li {
+    font-size: 20px;
+  }
 }
 
 .food {
@@ -529,8 +761,15 @@ footer {
 body {
   font-family: "Special Elite", cursive;
   font-weight: 400;
+  font-size: 1.2rem;
   line-height: 1.2rem;
   color: #fff;
+}
+@media only screen and (max-width: 56.25em) {
+  body {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

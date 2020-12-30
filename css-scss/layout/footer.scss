@@ -8,9 +8,31 @@ footer {
   margin: auto;
   height: 270px;
 
+  @include respond(tab-port) {
+    position: relative;
+    width: 100%;
+
+  }
+
   .row:not(:last-child){
     margin-bottom: 0;
   }
+
+  .small-logo {
+    @include respond(tab-port) {
+      position: absolute;
+      right: 10%;
+      top: 0;
+    }
+
+    @include respond(phone) {
+      position: absolute;
+      right: 0;
+      top: 10%;
+      width: 220px;
+    }
+  }
+
 }
 
 .footer_copyright {
@@ -24,6 +46,13 @@ footer {
    top: 0.7rem;
    right: 50%;
    transform: translate(50%,0);
+
+   @include respond(phone){
+     font-size: 12px;
+     letter-spacing: 1px;
+     width: 100%;
+     text-align: center;
+   }
   }
 }
 
@@ -32,13 +61,45 @@ footer {
 
 .navigation {
 
+  @include respond(tab-port) {
+    position: relative;
+
+  }
 
  &__list2 {
    list-style: none;
    margin: 2rem 5rem;
    display: block;
 
+    @include respond(tab-port) {
+     margin: 0;
+     position: absolute;
+     width: 50%;
+   }
+
   }
+
+  &__list2__right {
+    list-style: none;
+    margin: 2rem 5rem;
+    display: block;
+
+     @include respond(tab-port) {
+      margin: 0;
+      position: absolute;
+      width: 50;
+      top: 0;
+      left: 15rem;
+    }
+
+    @include respond(phone) {
+      width: 50;
+      top: 0;
+      left: 10rem;
+   }
+
+   }
+
 
   &__link2 {
     &:link,
@@ -64,5 +125,7 @@ footer {
     }
 
   }
+
+
 
 }
