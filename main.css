@@ -164,7 +164,7 @@ order: base + typography > general layout + grid > page layout > components
 
 .header {
   height: 95vh;
-  background-image: url(../img/nick-hillier-254650-unsplash.jpg);
+  background-image: url(img/nick-hillier-254650-unsplash.jpg);
   background-size: cover;
   background-position: right;
   position: relative;
@@ -459,7 +459,7 @@ label {
 }
 
 .social {
-  background-image: url(../img/jez-timms-305915-unsplash.jpg);
+  background-image: url(img/jez-timms-305915-unsplash.jpg);
   height: 80vh;
   background-size: cover;
   background-position: left;
